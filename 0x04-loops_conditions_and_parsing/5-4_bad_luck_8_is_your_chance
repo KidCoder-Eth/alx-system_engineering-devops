@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# displays bad luck for the 4th, good luck for the 8th,
-# Best School for the other iterations
+# displays bad luck for 4th, good luck for 8th, Best School for the others.
 
 COUNTER=1
 while [ $COUNTER -lt 11 ]
