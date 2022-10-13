@@ -1,17 +1,16 @@
 #!/usr/bin/env bash
 # This script is displaying bad luck good luck and Best School
-
-COUNTER=1
-while [ $COUNTER -lt 11 ]
+x=1
+while [ $x -le 10 ]
 do
-	if [ $COUNTER = 4 ]
+	if [ $x -eq 4 ]
 	then
 		echo "bad luck"
-	elif [ $COUNTER = 8 ]
+	elif [ $x -eq 8 ]
 	then
 		echo "good luck"
 	else
-		echo "Best School"
+		echo "Holberton School"
 	fi
-	let COUNTER+=1
+  x=$((x + 1))
 done
