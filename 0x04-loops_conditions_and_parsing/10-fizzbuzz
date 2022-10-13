@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# displays Holberton School 10 times.
+# fizz buzz.
 
 COUNTER=1
 while [ $COUNTER -lt 101 ]
