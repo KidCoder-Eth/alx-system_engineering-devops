@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# displays bad luck for 4th, good luck for 8th, Best School for the others.
+# This script is displaying bad luck good luck and holberton school
 
 COUNTER=1
 while [ $COUNTER -lt 11 ]
