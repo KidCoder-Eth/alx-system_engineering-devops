@@ -1,20 +1,18 @@
 #!/usr/bin/env bash
 # fizz buzz.
 
-COUNTER=1
-while [ $COUNTER -lt 101 ]
+for i in {1..100}
 do
-    if [ $((COUNTER%15)) = 0 ]
-    then
-        echo "FizzBuzz"
-    elif [ $((COUNTER%3)) = 0 ]
-    then
-        echo "Fizz"
-    elif [ $((COUNTER%5)) = 0 ]
-    then
-        echo "Buzz"
-    else
-        echo "$COUNTER"
-    fi
-    let COUNTER+=1
+	if [ $((i % 3)) == 0 ] && [ $((i % 5)) == 0 ]
+	then 
+		echo "FizzBuzz"
+	elif [ $((i % 3)) == 0 ]
+	then
+		echo "Fizz"
+	elif [ $((i % 5)) == 0 ]
+	then
+		echo "Buzz"
+	else
+		echo $i
+	fi
 done
